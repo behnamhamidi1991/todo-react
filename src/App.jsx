@@ -27,10 +27,10 @@ const App = () => {
 
             <div className="task-btns">
               <button className="delete-btn">
-                <i className="bx bx-trash"></i>
+                <BiSolidTrash />
               </button>
               <button className="done-btn">
-                <i className="bx bx-circle"></i>
+                <BiCircle />
               </button>
             </div>
           </li>
