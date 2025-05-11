@@ -1,15 +1,18 @@
 import React from "react";
+import { BiCircle } from "react-icons/bi";
+import { BiChevronDownCircle } from "react-icons/bi";
+import { BiSolidTrash } from "react-icons/bi";
 
 const App = () => {
   return (
     <div>
-      <div class="container">
-        <div class="task-header">
+      <div className="container">
+        <div className="task-header">
           <h1>Todo App</h1>
           <span>Stay organized, achieve more</span>
         </div>
 
-        <form class="task-form">
+        <form className="task-form">
           <input
             type="text"
             id="task-input"
@@ -18,16 +21,16 @@ const App = () => {
           <button type="submit">Add</button>
         </form>
 
-        <ul class="task-list">
+        <ul className="task-list">
           <li>
             <span>Take the trash out</span>
 
-            <div class="task-btns">
-              <button class="delete-btn">
-                <i class="bx bx-trash"></i>
+            <div className="task-btns">
+              <button className="delete-btn">
+                <i className="bx bx-trash"></i>
               </button>
-              <button class="done-btn">
-                <i class="bx bx-circle"></i>
+              <button className="done-btn">
+                <i className="bx bx-circle"></i>
               </button>
             </div>
           </li>
@@ -40,34 +43,34 @@ const App = () => {
               earn it anyway and then continue typing
             </span>
 
-            <div class="task-btns">
-              <button class="delete-btn">
-                <i class="bx bx-trash"></i>
+            <div className="task-btns">
+              <button className="delete-btn">
+                <BiSolidTrash />
               </button>
-              <button class="done-btn">
-                <i class="bx bx-circle"></i>
+              <button className="done-btn">
+                <BiCircle />
               </button>
             </div>
           </li>
 
           <li>
-            <span class="done">
+            <span className="done">
               Learn a new skill and save it into your notebook because you need
               to earn it anyway and then continue typing
             </span>
 
-            <div class="task-btns">
-              <button class="delete-btn">
-                <i class="bx bx-trash"></i>
+            <div className="task-btns">
+              <button className="delete-btn">
+                <BiSolidTrash />
               </button>
               <button class="done-btn">
-                <i class="bx bx-check-circle"></i>
+                <BiChevronDownCircle />
               </button>
             </div>
           </li>
         </ul>
 
-        <div class="clear-all-container">
+        <div className="clear-all-container">
           <button id="clear-all">Clear All Tasks</button>
         </div>
       </div>
