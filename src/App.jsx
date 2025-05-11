@@ -63,7 +63,7 @@ const App = () => {
               <button className="delete-btn">
                 <BiSolidTrash />
               </button>
-              <button class="done-btn">
+              <button className="done-btn">
                 <BiChevronDownCircle />
               </button>
             </div>
